@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom"
 import styles from "../styles/Main.module.css";
 
+import cat1 from "../images/cute-cat-1.svg"
+import cat2 from "../images/cute-cat-2.svg"
+
 const FIELDS = {
     NAME: "name", 
     ROOM: "room"
@@ -26,6 +29,10 @@ const handleClick = (e) => {
 }
     return (
         <div className={styles.wrapper}>
+            {/* Cat Images */}
+            <img src={cat1} alt="Cute Cat 1" className={styles.cat1} />
+            <img src={cat2} alt="Cute Cat 2" className={styles.cat2} />
+
             <div className={styles.container}>
                 <h1 className={styles.heading}>Join</h1>
 
